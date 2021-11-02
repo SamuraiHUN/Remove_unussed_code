@@ -11,3 +11,5 @@ Removed code(s)
 2. Passpod
 3. openid
 4. vcard
+5. blockcountry
+6. limit_time
