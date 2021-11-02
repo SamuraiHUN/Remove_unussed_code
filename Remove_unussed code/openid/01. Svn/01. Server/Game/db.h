@@ -1,0 +1,7 @@
+search and delete this:
+
+
+	QID_AUTH_LOGIN_OPENID,
+
+	QID_BRAZIL_CREATE_ID,
+	QID_JAPAN_CREATE_ID,
