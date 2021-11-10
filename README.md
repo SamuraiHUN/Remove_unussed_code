@@ -13,3 +13,4 @@ Removed code(s)
 4. vcard
 5. blockcountry
 6. limit_time
+7. bill | billing
