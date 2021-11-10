@@ -15,3 +15,4 @@ Removed code(s)
 6. limit_time
 7. bill | billing
 8. matrix_card
+9. sms | mobile
