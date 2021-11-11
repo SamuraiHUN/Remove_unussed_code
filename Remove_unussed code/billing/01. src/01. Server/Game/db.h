@@ -17,7 +17,7 @@ search this:
 	
 modify to:
 
-	void LoginPrepare(long lRemainSecs, LPDESC d, DWORD* pdwClientKey, int* paiPremiumTimes = NULL);
+	void LoginPrepare(LPDESC d, DWORD* pdwClientKey, int* paiPremiumTimes = NULL);
 
 search and remove this:
 
