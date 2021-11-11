@@ -380,7 +380,7 @@ void SendBillingExpire(const char* c_pszLogin, BYTE bBillType, int iSecs, CLogin
 	sys_log(0, "BILLING: EXPIRE %s type %d sec %d ptr %p", c_pszLogin, bBillType, iSecs, pkLD);
 }
 
-search and remove this (2x):
+search this (2x):
 
 				if (!g_bBilling)
 				{
@@ -389,6 +389,11 @@ search and remove this (2x):
 					M2_DELETE(pinfo);
 					break;
 				}
+
+and change to:
+
+				LoginPrepare(d, pinfo->adwClientKey, aiPremiumTimes);
+				M2_DELETE(pinfo);
 
 
 search and remove this:
