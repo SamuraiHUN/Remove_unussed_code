@@ -269,12 +269,13 @@ void DBManager::LoginPrepare(BYTE bBillType, DWORD dwBillID, long lRemainSecs, L
 
 modify to:
 
-void DBManager::LoginPrepare(long lRemainSecs, LPDESC d, DWORD* pdwClientKey, int* paiPremiumTimes)
+void DBManager::LoginPrepare(LPDESC d, DWORD * pdwClientKey, int * paiPremiumTimes)
 
 search and remove this too:
 
 	pkLD->SetBillType(bBillType);
 	pkLD->SetBillID(dwBillID);
+	pkLD->SetRemainSecs(lRemainSecs);
 
 search and remove this:
 
