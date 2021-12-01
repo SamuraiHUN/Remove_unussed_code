@@ -3,6 +3,7 @@ search and delete:
 	m_bBillType = 0;
 	m_dwBillID = 0;
 	m_bBilling = false;
+	m_lRemainSecs = 0;
 
 search and delete:
 
@@ -27,7 +28,7 @@ BYTE CLoginData::GetBillType()
 }
 
 
-search this:
+search this and delete:
 
 void CLoginData::SetRemainSecs(long l)
 {
@@ -35,12 +36,11 @@ void CLoginData::SetRemainSecs(long l)
 	sys_log(0, "SetRemainSecs %s %d type %u", m_stLogin.c_str(), m_lRemainSecs, m_bBillType);
 }
 
-modify to:
+search this and delete:
 
-void CLoginData::SetRemainSecs(long l)
+long CLoginData::GetRemainSecs()
 {
-	m_lRemainSecs = l;
-	sys_log(0, "SetRemainSecs %s %d type %u", m_stLogin.c_str(), m_lRemainSecs);
+	return m_lRemainSecs;
 }
 
 search this and delete:
